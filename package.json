@@ -1,6 +1,6 @@
 {
   "name": "scalp-bot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Londarth/scalp-bot.git"
@@ -10,25 +10,20 @@
     "url": "https://github.com/Londarth/scalp-bot/issues"
   },
   "homepage": "https://github.com/Londarth/scalp-bot",
-  "description": "Alpaca trading bot with Telegram control and backtesting",
+  "description": "Helios Fusion — multi-signal algorithmic trading bot for Alpaca",
   "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
-  "main": "scripts/touch-turn-bot.js",
+  "main": "scripts/helios-bot.js",
   "scripts": {
-    "start": "node scripts/touch-turn-bot.js",
-    "test": "node --test tests/telegram-ctl.test.js tests/touch-turn-bot.test.js tests/indicators.test.js tests/retry.test.js tests/scanner.test.js",
+    "start": "node scripts/helios-bot.js",
+    "test": "node --test tests/telegram-ctl.test.js tests/indicators.test.js tests/retry.test.js tests/scanner.test.js",
     "test:ctl": "node --test tests/telegram-ctl.test.js",
-    "test:bot": "node --test tests/touch-turn-bot.test.js",
     "test:indicators": "node --test tests/indicators.test.js",
-    "backtest": "node scripts/backtest.js",
-    "scan": "node scripts/backtest.js scan",
-    "pre-market": "node scripts/pre-market-scan.js",
-    "pivot-revert": "node scripts/pivot-revert-bot.js",
-    "pivot-discover": "node scripts/pivot-discover.js",
-    "swing-backtest": "node scripts/swing-backtest.js",
-    "test:scanner": "node --test tests/scanner.test.js"
+    "test:scanner": "node --test tests/scanner.test.js",
+    "backtest": "node scripts/helios-backtest.js",
+    "pre-market": "node scripts/pre-market-scan.js"
   },
   "dependencies": {
     "@alpacahq/alpaca-trade-api": "^3.1.3",

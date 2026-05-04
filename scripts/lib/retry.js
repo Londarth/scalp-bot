@@ -28,3 +28,10 @@ export async function retry(fn, { maxRetries = 3, baseDelay = 1000, shouldRetry 
   }
   throw lastError;
 }
+
+export async function withTimeout(promiseFn, ms, label = 'operation') {
+  const timeout = new Promise((_, reject) => {
+    setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms);
+  });
+  return Promise.race([promiseFn(), timeout]);
+}

@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'touch-turn-bot',
-      script: 'scripts/touch-turn-bot.js',
+      name: 'helios-bot',
+      script: 'scripts/helios-bot.js',
       cwd: __dirname,
       env: {
         NODE_ENV: 'production',
@@ -11,23 +11,8 @@ module.exports = {
       autorestart: false,
       watch: false,
       log_date_format: 'YYYY-MM-DD HH:mm:ss',
-      error_file: 'logs/touch-turn-bot-error.log',
-      out_file: 'logs/touch-turn-bot-out.log',
-      merge_logs: true,
-    },
-    {
-      name: 'pivot-revert-bot',
-      script: 'scripts/pivot-revert-bot.js',
-      cwd: __dirname,
-      env: {
-        NODE_ENV: 'production',
-      },
-      max_restarts: 3,
-      autorestart: false,
-      watch: false,
-      log_date_format: 'YYYY-MM-DD HH:mm:ss',
-      error_file: 'logs/pivot-revert-bot-error.log',
-      out_file: 'logs/pivot-revert-bot-out.log',
+      error_file: 'logs/helios-bot-error.log',
+      out_file: 'logs/helios-bot-out.log',
       merge_logs: true,
     },
   ],

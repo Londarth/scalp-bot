@@ -13,8 +13,8 @@ export { escapeHtml };
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const BOT_NAME = 'touch-turn';
-const LOG_PATH = join(__dirname, 'touch-turn-log.json');
+const BOT_NAME = 'helios';
+const LOG_PATH = join(__dirname, 'helios-log.json');
 const SNAPSHOT_PATH = join(__dirname, 'account-snapshot.json');
 const ORPHANED_PATH = join(__dirname, 'orphaned-positions.json');
 
@@ -67,7 +67,7 @@ function pm2(cmd) {
 
 async function getBotStatus() {
   try {
-    const { stdout } = await pm2('describe touch-turn-bot');
+    const { stdout } = await pm2('describe helios-bot');
     const statusMatch = stdout.match(/status\s*│\s*(\w+)/);
     const uptimeMatch = stdout.match(/uptime\s*│\s*(.+)/);
     return {
@@ -112,9 +112,9 @@ async function handleStart() {
   }
   lastStartCmd = now;
   try {
-    await pm2('start ecosystem.config.cjs --only touch-turn-bot');
+    await pm2('start ecosystem.config.cjs --only helios-bot');
     const paper = process.env.ALPACA_PAPER !== 'false' ? 'PAPER' : 'LIVE';
-    await sendTelegram(`⚡️ <b>Touch &amp; Turn Bot started</b>\nMode: ${paper}\nWindow: 9:45–11:00 ET`, { buttons: MAIN_BUTTONS });
+    await sendTelegram(`⚡️ <b>Helios Bot started</b>\nMode: ${paper}\nWindow: 10:05–11:15 ET`, { buttons: MAIN_BUTTONS });
   } catch (err) {
     await sendTelegram(`❌ Failed to start bot: ${err.message}`, { buttons: MAIN_BUTTONS });
   }
@@ -122,8 +122,8 @@ async function handleStart() {
 
 async function handleStop() {
   try {
-    await pm2('stop touch-turn-bot');
-    await sendTelegram('🛑 <b>Touch &amp; Turn Bot stopped</b>', { buttons: MAIN_BUTTONS });
+    await pm2('stop helios-bot');
+    await sendTelegram('🛑 <b>Helios Bot stopped</b>', { buttons: MAIN_BUTTONS });
   } catch (err) {
     await sendTelegram(`❌ Failed to stop bot: ${err.message}`, { buttons: MAIN_BUTTONS });
   }
@@ -136,7 +136,7 @@ async function handleStatus() {
     readSnapshot(),
   ]);
 
-  let msg = botStatus.online ? '🟢 <b>Touch &amp; Turn Bot is running</b>' : '🔴 <b>Bot is stopped</b>';
+  let msg = botStatus.online ? '🟢 <b>Helios Bot is running</b>' : '🔴 <b>Bot is stopped</b>';
   if (botStatus.online) {
     const paper = process.env.ALPACA_PAPER !== 'false' ? 'PAPER' : 'LIVE';
     msg += `\nMode: ${paper}`;
@@ -190,9 +190,9 @@ async function handleStatus() {
 
 async function handleHelp() {
   await sendTelegram(
-    '🤖 <b>Scalp Bot Commands</b>\n\n' +
-    '/start — Start the trading bot\n' +
-    '/stop — Stop the trading bot\n' +
+    '🤖 <b>Helios Bot Commands</b>\n\n' +
+    '/start — Start Helios bot\n' +
+    '/stop — Stop Helios bot\n' +
     '/status — Show bot status and recent trades\n' +
     '/help — Show this message\n\n' +
     '⚠️ Orphaned position buttons appear automatically when detected.',
@@ -335,7 +335,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log('🤖 Scalp Bot Controller started');
+  console.log('🤖 Helios Bot Controller started');
   console.log(`Chat ID: ${TG_CHAT_ID}`);
   console.log('Listening for commands: /start, /stop, /status, /help');
 

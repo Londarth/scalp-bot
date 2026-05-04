@@ -1,0 +1,87 @@
+[
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "════════════════════════════════════════════════════════════"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "☀️ Helios Fusion Bot v2.0 — PAPER — DRY=true"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "Signals: orb-breakout, vwap-reversion, volume-surge, pairs-divergence, gap-fill, momentum-cascade | Universe: 13 stocks"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "════════════════════════════════════════════════════════════"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "error",
+    "msg": "Market context too stale (212m old > 5m limit)"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "Learner: fresh start (no prior state)"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "Fusion: >=2 votes | composite >0.25 | max 6 trades"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "Window: 1005–1110 ET | Hard exit: 1130 ET"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "Kelly ×0.250 | Base pos: 2% | Max equity: 40%"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "════════════════════════════════════════════════════════════"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "Equity: $97699.79"
+  },
+  {
+    "ts": "5/4/2026, 3:37:51 PM",
+    "level": "info",
+    "msg": "Regime: chop"
+  },
+  {
+    "ts": "5/4/2026, 3:37:52 PM",
+    "level": "info",
+    "msg": "--- cycle 1 | time 1537 ---"
+  },
+  {
+    "ts": "5/4/2026, 3:37:52 PM",
+    "level": "info",
+    "msg": "Hard exit — closing all positions"
+  },
+  {
+    "ts": "5/4/2026, 3:37:52 PM",
+    "level": "info",
+    "msg": "Learner state saved → /root/scalp-bot/scripts/learner-state.json"
+  },
+  {
+    "ts": "5/4/2026, 3:37:52 PM",
+    "level": "info",
+    "msg": "Done — 0 trades completed, P&L $0.00"
+  },
+  {
+    "ts": "5/4/2026, 3:38:05 PM",
+    "level": "info",
+    "msg": "SIGTERM received, initiating graceful shutdown..."
+  }
+]

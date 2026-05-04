@@ -1,0 +1,287 @@
+{
+  "date": "2026-05-04",
+  "generatedAt": "2026-05-04T16:06:11.589Z",
+  "generatedAtET": "5/4/2026, 12:06:11 PM",
+  "staleAfterMinutes": 5,
+  "market": {
+    "spy": {
+      "ob": {
+        "high": 720.65,
+        "low": 719.3,
+        "open": 720.03,
+        "close": 720.41,
+        "range": 1.35,
+        "direction": "green"
+      },
+      "regime": "chop",
+      "spyDirection": "red",
+      "vwap": 720.03
+    },
+    "qqq": {
+      "ob": {
+        "high": 675.22,
+        "low": 673.64,
+        "open": 674.62,
+        "close": 674.64,
+        "range": 1.58,
+        "direction": "green"
+      },
+      "regime": "chop",
+      "spyDirection": "neutral",
+      "vwap": 674.78
+    }
+  },
+  "symbols": {
+    "LCID": {
+      "ob": {
+        "high": 6.66,
+        "low": 6.45,
+        "open": 6.5,
+        "close": 6.62,
+        "range": 0.21,
+        "rangeATRPct": 40.7,
+        "direction": "green"
+      },
+      "gap": {
+        "fromPrevClose": -0.84,
+        "abs": 0.84,
+        "fillPct": 209.1,
+        "label": "down"
+      },
+      "volume": {
+        "rvol": 1.01,
+        "orbVolume": 33625,
+        "avgDaily": 647608
+      },
+      "vwap": {
+        "anchor": 6.59
+      },
+      "volatility": {
+        "dailyATR": 0.52,
+        "atrPct": 7.8,
+        "rangeATR": 0.407,
+        "atrExpansion": {
+          "ratio": 1.164,
+          "regime": "normal",
+          "label": "normal (116%)"
+        }
+      },
+      "opportunity": {
+        "score": 56.2,
+        "tier": "full",
+        "components": {
+          "rarScore": 0.277,
+          "rvolScore": 0.256,
+          "gapScore": 0.279,
+          "atrScore": 1,
+          "dirScore": 1
+        }
+      }
+    },
+    "BTDR": {
+      "ob": {
+        "high": 12.2,
+        "low": 11.97,
+        "open": 12.17,
+        "close": 12.08,
+        "range": 0.23,
+        "rangeATRPct": 29.2,
+        "direction": "red"
+      },
+      "gap": {
+        "fromPrevClose": 2.87,
+        "abs": 2.87,
+        "fillPct": 26.5,
+        "label": "up"
+      },
+      "volume": {
+        "rvol": 1.09,
+        "orbVolume": 17303,
+        "avgDaily": 310972
+      },
+      "vwap": {
+        "anchor": 12.08
+      },
+      "volatility": {
+        "dailyATR": 0.79,
+        "atrPct": 6.5,
+        "rangeATR": 0.292,
+        "atrExpansion": {
+          "ratio": 0.833,
+          "regime": "normal",
+          "label": "normal (83%)"
+        }
+      },
+      "opportunity": {
+        "score": 53.1,
+        "tier": "light",
+        "components": {
+          "rarScore": 0.122,
+          "rvolScore": 0.293,
+          "gapScore": 0.958,
+          "atrScore": 1,
+          "dirScore": 0.493
+        }
+      }
+    },
+    "IONQ": {
+      "ob": {
+        "high": 47.4,
+        "low": 46.25,
+        "open": 46.68,
+        "close": 46.59,
+        "range": 1.15,
+        "rangeATRPct": 31.8,
+        "direction": "red"
+      },
+      "gap": {
+        "fromPrevClose": 1.06,
+        "abs": 1.06,
+        "fillPct": 18.4,
+        "label": "up"
+      },
+      "volume": {
+        "rvol": 1.07,
+        "orbVolume": 51885,
+        "avgDaily": 949731
+      },
+      "vwap": {
+        "anchor": 46.78
+      },
+      "volatility": {
+        "dailyATR": 3.62,
+        "atrPct": 7.7,
+        "rangeATR": 0.318,
+        "atrExpansion": {
+          "ratio": 0.909,
+          "regime": "normal",
+          "label": "normal (91%)"
+        }
+      },
+      "opportunity": {
+        "score": 37.5,
+        "tier": "light",
+        "components": {
+          "rarScore": 0.157,
+          "rvolScore": 0.283,
+          "gapScore": 0.354,
+          "atrScore": 1,
+          "dirScore": 0.129
+        }
+      }
+    },
+    "CLSK": {
+      "ob": {
+        "high": 12.41,
+        "low": 12.13,
+        "open": 12.27,
+        "close": 12.29,
+        "range": 0.29,
+        "rangeATRPct": 35.2,
+        "direction": "green"
+      },
+      "gap": {
+        "fromPrevClose": 0.95,
+        "abs": 0.95,
+        "fillPct": -26.1,
+        "label": "up"
+      },
+      "volume": {
+        "rvol": 1.31,
+        "orbVolume": 49979,
+        "avgDaily": 741776
+      },
+      "vwap": {
+        "anchor": 12.3
+      },
+      "volatility": {
+        "dailyATR": 0.83,
+        "atrPct": 6.5,
+        "rangeATR": 0.352,
+        "atrExpansion": {
+          "ratio": 1.004,
+          "regime": "normal",
+          "label": "normal (100%)"
+        }
+      },
+      "opportunity": {
+        "score": 41.2,
+        "tier": "light",
+        "components": {
+          "rarScore": 0.202,
+          "rvolScore": 0.407,
+          "gapScore": 0.316,
+          "atrScore": 1,
+          "dirScore": 0.163
+        }
+      }
+    }
+  },
+  "tiers": {
+    "full": [
+      "LCID"
+    ],
+    "light": [
+      "BTDR",
+      "IONQ",
+      "CLSK"
+    ],
+    "skip": [
+      "PLTR",
+      "SOFI",
+      "MARA",
+      "DKNG",
+      "QS",
+      "SMR",
+      "UEC",
+      "NCLH",
+      "SOUN"
+    ]
+  },
+  "correlationMatrix": {
+    "LCID": {
+      "LCID": 1,
+      "BTDR": 0.029,
+      "IONQ": -0.142,
+      "CLSK": 0.206
+    },
+    "BTDR": {
+      "LCID": 0.029,
+      "BTDR": 1,
+      "IONQ": 0.704,
+      "CLSK": 0.656
+    },
+    "IONQ": {
+      "LCID": -0.142,
+      "BTDR": 0.704,
+      "IONQ": 1,
+      "CLSK": 0.322
+    },
+    "CLSK": {
+      "LCID": 0.206,
+      "BTDR": 0.656,
+      "IONQ": 0.322,
+      "CLSK": 1
+    }
+  },
+  "learnerState": {
+    "signalScores": {},
+    "lastRebalance": 0,
+    "savedAt": "2026-05-04T15:57:27.952Z"
+  },
+  "calendar": {
+    "risk": "normal",
+    "reason": "Monday — gap-fill favorable",
+    "kellyMultiplier": 0.75,
+    "signalPreference": "mean_reversion",
+    "deprioritize": [],
+    "flags": [
+      "MONDAY"
+    ]
+  },
+  "meta": {
+    "version": "2.0.0",
+    "universeCount": 13,
+    "symbolCount": 4
+  }
+}
